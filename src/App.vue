@@ -1,37 +1,7 @@
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer
-      v-model="drawer"
-      app
-    >
-      <v-list dense>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-home</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Home</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-contact-mail</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Contact</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-
-    <v-app-bar
-      app
-      color="indigo"
-      dark
-    >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title>Application</v-toolbar-title>
-    </v-app-bar>
+    <Header> </Header>
+    <Body> </Body>
     <v-footer
       color="indigo"
       app
@@ -42,18 +12,18 @@
 </template>
 
 <script>
-// import Header from '@/components/Header.vue'
-// import Banner from '@/components/Banner.vue'
+import Header from '@/components/home/Header.vue'
+import Body from '@/components/home/Body.vue'
 
 export default {
   name: 'app',
   props: {
     source: String
   },
-  // components : {
-  //   Header,
-  //   Banner
-  // },
+  components: {
+    Header,
+    Body
+  },
   data: () => ({
     drawer: null
   })

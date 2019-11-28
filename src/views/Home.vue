@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    This is an home component
   </div>
 </template>
 

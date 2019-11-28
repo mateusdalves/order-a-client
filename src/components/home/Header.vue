@@ -1,7 +1,8 @@
 <template>
-  <div>Banner component</div>
+  <header>
+    <h1>Header component</h1>
+  </header>
 </template>
-
 
 <script>
 export default {
