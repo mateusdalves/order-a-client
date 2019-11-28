@@ -6,7 +6,7 @@
       color="indigo"
       app
     >
-      <span class="white--text">&copy; 2019</span>
+      <span class="white--text">&copy; 2019 Order-A</span>
     </v-footer>
   </v-app>
 </template>
