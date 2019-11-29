@@ -1,14 +1,14 @@
 <template>
-  <v-app id="inspire">
-    <Header> </Header>
-    <Body> </Body>
-    <v-footer
+  <div>
+    <Header></Header>
+    <Body></Body>
+    <b-footer
       color="indigo"
       app
     >
-      <span class="white--text">&copy; 2019 Order-A</span>
-    </v-footer>
-  </v-app>
+    <span class="white--text">&copy; 2019 Order-A</span>
+    </b-footer>
+  </div>
 </template>
 
 <script>
