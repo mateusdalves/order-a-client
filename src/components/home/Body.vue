@@ -53,12 +53,18 @@ export default {
       'banners': [
         {
           'id': 0,
+          'name': 'Burguer',
+          'imgPath': require('@/assets/banners/burguer-banner.jpeg'),
+          'description': 'Delicious meals from everywhere'
+        },
+        {
+          'id': 1,
           'name': 'Veggie',
           'imgPath': require('@/assets/banners/veggie-banner.jpg'),
           'description': 'We serve for all kinds of tastes'
         },
         {
-          'id': 1,
+          'id': 2,
           'name': 'Tacos',
           'imgPath': require('@/assets/banners/tacos-banner.png'),
           'description': 'We might have something for you too!'

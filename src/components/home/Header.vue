@@ -40,12 +40,26 @@ export default {
         {
           'id': 0,
           'name': 'Home',
-          'route': 'home'
+          'route': 'home',
+          'iconPath': require('@/assets/icons/home.png')
         },
         {
           'id': 1,
           'name': 'Our Menu',
-          'route': 'menu'
+          'route': 'menu',
+          'iconPath': require('@/assets/icons/menu.png')
+        },
+        {
+          'id':2,
+          'name': 'Order',
+          'route': 'order',
+          'iconPath': require('@/assets/icons/order.png')
+        },
+        {
+          'id':3,
+          'name': 'About',
+          'route': 'about',
+          'iconPath': require('@/assets/icons/about.png')
         }
       ]
     }
