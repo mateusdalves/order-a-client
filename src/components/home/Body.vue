@@ -54,7 +54,7 @@ export default {
         {
           'id': 0,
           'name': 'Burguer',
-          'imgPath': require('@/assets/banners/burguer-banner.jpeg'),
+          'imgPath': require('@/assets/banners/burger-banner.jpeg'),
           'description': 'Delicious meals from everywhere'
         },
         {
@@ -69,15 +69,15 @@ export default {
           'imgPath': require('@/assets/banners/tacos-banner.png'),
           'description': 'We might have something for you too!'
         }
-      ],
-      methods: {
-        onSlideStart (slide) {
-          this.sliding = true
-        },
-        onSlideEnd (slide) {
-          this.sliding = false
-        }
-      }
+      ]
+    }
+  },
+  methods: {
+    onSlideStart (slide) {
+      this.sliding = true
+    },
+    onSlideEnd (slide) {
+      this.sliding = false
     }
   }
 }

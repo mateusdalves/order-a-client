@@ -3,27 +3,36 @@
     <b-container>
       <b-row>
         <b-col>
-          <b-navbar type="light">
-            <b-navbar-brand to="home">
-              <img src="@/assets/logo.png">
-            </b-navbar-brand>
+          <b-navbar
+          type="light"
+          toggleable="sm"
+          >
+            <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
-              <b-navbar
-              toggleable="lg"
-              >
+              <b-navbar-brand to="home">
+                <img src="@/assets/logo.png">
+              </b-navbar-brand>
                 <b-navbar-nav
-                fill="true"
+                fill
                 align="right"
                 class="m-10"
                 >
-                <b-nav-item
-                v-for="menuItem in menuItems"
-                :key="menuItem.id"
-                :to="menuItem.route"
-                class="pl-4 pr-4"
-                >{{ menuItem.name }}</b-nav-item>
+                  <b-nav-item
+                  v-for="menuItem in menuItems"
+                  :key="menuItem.id"
+                  :to="menuItem.route"
+                  class="pl-4 pr-4"
+                  >
+                    <img
+                    :src="menuItem.iconPath"
+                    height="20px"
+                    width="20px"
+                    class="d-inline-block align-center">
+                    <b-nav-text class="pl-2" style="font-size:17px;">
+                    {{ menuItem.name }}
+                    </b-nav-text>
+                  </b-nav-item>
                 </b-navbar-nav>
-              </b-navbar>
             </b-collapse>
           </b-navbar>
         </b-col>
@@ -50,13 +59,13 @@ export default {
           'iconPath': require('@/assets/icons/menu.png')
         },
         {
-          'id':2,
+          'id': 2,
           'name': 'Order',
           'route': 'order',
           'iconPath': require('@/assets/icons/order.png')
         },
         {
-          'id':3,
+          'id': 3,
           'name': 'About',
           'route': 'about',
           'iconPath': require('@/assets/icons/about.png')
