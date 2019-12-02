@@ -1,64 +1,52 @@
 <template>
-  <v-container fluid>
-    <v-row dense>
-      <v-col
-      v-for="meal in meals"
-      :key="meal.id"
-      >
-        <v-hover v-slot:default="{ hover }">
-          <v-card
-          :elevation="hover ? 10 : 2"
-          :loading="loading"
-          class="mx-auto my-4"
-          max-width="350"
-          >
-            <v-img
-              height="250"
-              :src="meal.iconPath"
-            >
-            </v-img>
-              <v-card-title> {{ meal.name }} </v-card-title>
-            <v-card-text>
-              <v-row
-                align="center"
-                class="mx-0"
-              >
-                <v-rating
-                  :value="4.5"
-                  color="amber"
-                  dense
-                  half-increments
-                  readonly
-                  size="14"
-                ></v-rating>
-                <div class="grey--text ml-4">4.5 (413)</div>
-              </v-row>
-              <div class="my-4 subtitle-1 black--text">
-                $ {{ meal.price }}
-              </div>
-              <div>{{meal.description}}</div>
-            </v-card-text>
-            <v-divider class="mx-4"></v-divider>
-            <v-card-actions>
-              <v-btn
-                color="deep-purple accent-4"
-                text
-                @click="reserve"
-              >
-                Order
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-hover>
-      </v-col>
-    </v-row>
-  </v-container>
+  <b-container>
+    <b-card-group>
+      <b-row>
+        <b-col
+        v-for="meal in meals"
+        :key="meal.id"
+        md="6"
+        >
+        <b-card
+        :header="meal.name"
+        no-body class="overflow-hidden" style="max-width: 540px;"
+        >
+          <b-card-img :src="meal.iconPath" class="rounded-0"></b-card-img>
+        </b-card>
+        </b-col>
+      </b-row>
+    </b-card-group>
+  </b-container>
 </template>
 
 <script>
 export default {
   data: () => {
-
+    return {
+      'meals': [
+        {
+          'id': 0,
+          'name': 'Hamburguer',
+          'iconPath': require('@/assets/imgs/hamburguer.jpg'),
+          'description': 'A tasty burguer',
+          'price': 5.0
+        },
+        {
+          'id': 1,
+          'name': 'pizza',
+          'iconPath': require('@/assets/imgs/pizza.jpg'),
+          'description': 'delicious pizza',
+          'price': 10.0
+        },
+        {
+          'id': 2,
+          'name': 'croissant',
+          'iconPath': require('@/assets/imgs/croissant.jpg'),
+          'description': 'hard to pronounce',
+          'price': 3.5
+        }
+      ]
+    }
   }
 }
 </script>

@@ -55,19 +55,19 @@ export default {
         {
           'id': 1,
           'name': 'Our Menu',
-          'route': 'menu',
+          'route': '/menu',
           'iconPath': require('@/assets/icons/menu.png')
         },
         {
           'id': 2,
           'name': 'Order',
-          'route': 'order',
+          'route': '/order',
           'iconPath': require('@/assets/icons/order.png')
         },
         {
           'id': 3,
           'name': 'About',
-          'route': 'about',
+          'route': '/about',
           'iconPath': require('@/assets/icons/about.png')
         }
       ]

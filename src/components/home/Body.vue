@@ -27,29 +27,6 @@ export default {
     return {
       'model': 0,
       'cycle': true,
-      'meals': [
-        {
-          'id': 0,
-          'name': 'Hamburguer',
-          'iconPath': require('@/assets/imgs/hamburguer.jpg'),
-          'description': 'A tasty burguer',
-          'price': 5.0
-        },
-        {
-          'id': 1,
-          'name': 'pizza',
-          'iconPath': require('@/assets/imgs/pizza.jpg'),
-          'description': 'delicious pizza',
-          'price': 10.0
-        },
-        {
-          'id': 2,
-          'name': 'croissant',
-          'iconPath': require('@/assets/imgs/croissant.jpg'),
-          'description': 'hard to pronounce',
-          'price': 3.5
-        }
-      ],
       'banners': [
         {
           'id': 0,
