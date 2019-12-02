@@ -10,6 +10,7 @@
     background="#ababab"
     @sliding-start="onSlideStart"
     @sliding-end="onSlideEnd"
+    class=".d-none .d-sm-block"
   >
     <b-carousel-slide
     v-for="banner in banners"

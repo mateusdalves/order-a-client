@@ -9,7 +9,10 @@
           >
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
-              <b-navbar-brand to="home">
+              <b-navbar-brand to="/"
+              active-class="logo-active"
+              class="d-none d-md-block"
+              >
                 <img src="@/assets/logo.png">
               </b-navbar-brand>
                 <b-navbar-nav
@@ -20,8 +23,8 @@
                   <b-nav-item
                   v-for="menuItem in menuItems"
                   :key="menuItem.id"
-                  :to="menuItem.route"
-                  class="pl-4 pr-4"
+                  :to="menuItem.route" exact
+                  class="menu-item pl-4 pr-4"
                   >
                     <img
                     :src="menuItem.iconPath"
@@ -77,8 +80,21 @@ export default {
 </script>
 
 <style scoped>
-.bar{
+.bar {
   width:100%;
   background-color: white;
+}
+/*.router-link-active {
+  background-color: rgba(153, 153, 153, 0.2);
+  border-radius: 10px;
+}*/
+.menu-item {
+  transition: background-color 1s;
+  border-radius: 10px;
+}
+.menu-item:hover {
+  background-color: rgba(153, 153, 153, 0.3);
+  border-radius: 10px;
+  cursor: pointer;
 }
 </style>
