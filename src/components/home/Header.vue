@@ -49,7 +49,7 @@ export default {
         {
           'id': 0,
           'name': 'Home',
-          'route': 'home',
+          'route': '/',
           'iconPath': require('@/assets/icons/home.png')
         },
         {

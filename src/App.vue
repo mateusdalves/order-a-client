@@ -1,7 +1,8 @@
 <template>
   <div>
     <Header></Header>
-    <Body></Body>
+    <!-- <Body></Body> -->
+    <router-view/>
     <b-footer
       color="indigo"
       app
@@ -13,7 +14,7 @@
 
 <script>
 import Header from '@/components/home/Header.vue'
-import Body from '@/components/home/Body.vue'
+// import Body from '@/components/home/Body.vue'
 
 export default {
   name: 'app',
@@ -21,8 +22,8 @@ export default {
     source: String
   },
   components: {
-    Header,
-    Body
+    Header
+    // Body
   },
   data: () => ({
     drawer: null

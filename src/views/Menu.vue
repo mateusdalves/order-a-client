@@ -1,7 +1,7 @@
 <template>
-  <v-container>
+  <b-container>
     <Meals></Meals>
-  </v-container>
+  </b-container>
 </template>
 
 <script>
