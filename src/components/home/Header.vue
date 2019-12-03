@@ -35,6 +35,9 @@
                     {{ menuItem.name }}
                     </b-nav-text>
                   </b-nav-item>
+                  <b-nav-text class="align-center">
+                    +99 99 99999-9999
+                  </b-nav-text>
                 </b-navbar-nav>
             </b-collapse>
           </b-navbar>
