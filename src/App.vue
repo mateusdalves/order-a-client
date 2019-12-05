@@ -3,12 +3,9 @@
     <Header></Header>
     <!-- <Body></Body> -->
     <router-view/>
-    <b-footer
-      color="indigo"
-      app
-    >
+    <footer>
     <span class="white--text">&copy; 2019 Order-A</span>
-    </b-footer>
+    </footer>
   </div>
 </template>
 

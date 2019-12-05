@@ -8,7 +8,7 @@
 import Meals from '@/components/menu/Meals.vue'
 
 export default {
-  name: 'menu',
+  name: 'item-menu',
   components: {
     Meals
   }

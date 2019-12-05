@@ -8,7 +8,7 @@ export default [{
 },
 {
   path: '/menu',
-  name: 'menu',
+  name: 'item-menu',
   component: Menu
 }
 ]
