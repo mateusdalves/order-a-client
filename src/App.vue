@@ -3,8 +3,8 @@
     <Header></Header>
     <!-- <Body></Body> -->
     <router-view/>
-    <footer>
-    <span class="white--text">&copy; 2019 Order-A</span>
+    <footer class="main-footer">
+    <span>&copy; 2019 Order-A</span>
     </footer>
   </div>
 </template>
@@ -27,3 +27,14 @@ export default {
   })
 }
 </script>
+
+<style scoped>
+.main-footer  {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0);
+  text-align: center;
+}
+</style>
