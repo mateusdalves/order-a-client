@@ -75,6 +75,12 @@ export default {
           'name': 'About',
           'route': '/about',
           'iconPath': require('@/assets/icons/about.png')
+        },
+        {
+          'id': 3,
+          'name': 'ADM',
+          'route': '/adm',
+          'iconPath': require('@/assets/icons/adm.png')
         }
       ]
     }

@@ -11,7 +11,6 @@
 
 <script>
 import Header from '@/components/home/Header.vue'
-// import Body from '@/components/home/Body.vue'
 
 export default {
   name: 'app',
@@ -20,7 +19,6 @@ export default {
   },
   components: {
     Header
-    // Body
   },
   data: () => ({
     drawer: null
